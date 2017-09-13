@@ -15,6 +15,7 @@ import { ProfilePage } from "../pages/profile/profile";
 import { LoginPage } from "../pages/login/login";
 import { ModalPageModule } from "../pages/modal/modal.module";
 import { ServiceProvider } from '../providers/service/service';
+import { DetailPageModule } from "../pages/detail/detail.module";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ServiceProvider } from '../providers/service/service';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     ModalPageModule,
+    DetailPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

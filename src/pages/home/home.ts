@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ServiceProvider } from "../../providers/service/service";
+import { DetailPage } from "../detail/detail";
 
 @Component({
   selector: 'page-home',
@@ -12,6 +13,10 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public postsService: ServiceProvider) {
 
+  }
+
+  detailsModal(){
+    this.navCtrl.setRoot(DetailPage);
   }
 
    ionViewDidLoad(){
