@@ -1,19 +1,41 @@
-<ion-menu [content]="content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
-  </ion-content>
-
-</ion-menu>
-
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-menu side="left" [content]="content">
+        <ion-header>
+            <ion-navbar color="primary">
+      <ion-buttons left>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-navbar>
+        </ion-header>        
+        <ion-content>
+            <ion-list>
+                <button ion-item menuClose (click)="goHome()">
+                    <ion-icon color="primary" ios="ios-home-outline" md="md-home" item-left></ion-icon>
+                    <span>Home</span>
+                </button>
+                <button ion-item menuClose (click)="goSchedule()">
+                    <ion-icon color="primary" ios="ios-list-outline" md="md-list" item-left></ion-icon>
+                    <span>Schedule</span>
+                </button>
+                <button ion-item menuClose (click)="goReport()">
+                    <ion-icon color="primary" ios="ios-clipboard-outline" md="md-clipboard" item-left></ion-icon>
+                    <span>Report</span>
+                </button>
+                <button ion-item menuClose (click)="goHistory()">
+                    <ion-icon color="primary" ios="ios-paper-outline" md="md-paper" item-left></ion-icon>
+                    <span>History</span>
+                </button>
+                <button ion-item menuClose (click)="goProfile()">
+                    <ion-icon color="primary" ios="ios-person-outline" md="md-person" item-left></ion-icon>
+                    <span>Profile</span>
+                </button>
+                <button ion-item menuClose (click)="goLogout()">
+                    <ion-icon color="primary" ios="ios-person-outline" md="md-log-out" item-left></ion-icon>
+                    <span>Logout</span>
+                </button>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-nav [root]="rootPage" #content hide-tab></ion-nav>

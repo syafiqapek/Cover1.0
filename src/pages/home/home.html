@@ -1,18 +1,81 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+        </ion-buttons>
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+<ion-content text-center style="margin-top: 0px;">
+<div style="background-color:#e1f5fe;padding:10%;">
+  <div style="padding-top:0%;">
+    <!--<p style="margin:0%;">YOUR RATING</p>
+  <ion-icon name="star" color="gold" *ngFor="let item of [1,2,3,4,5];"></ion-icon>-->
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    <p style="margin-bottom: 0%;">TODAY SUMMARY REPORT</p>
+      <h4 style="color:black;margin-top: 0%;padding-bottom:0%;">19 JUN 2017</h4>
+    <button small ion-button round> TOTAL:10</button>
+    <button small ion-button round> PENDING:7</button>
+    <button small ion-button round>COMPLETED:3</button>
+  </div>
+</div>
+
+<ion-card color="third">
+  <ion-card-content>
+    <ion-list>
+      Name: Iphone 6S (ABU)<br>
+      Damage:Cracked Screen<br> 
+      Time: 1000 PM ( slot 1)<br>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card color="third">
+  <ion-card-content>
+    <ion-list>
+      Today's appointment
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card color="light">
+  <ion-card-content>
+    <ion-list>
+      Tomorrow's appointment
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card color="light">
+  <ion-card-content>
+    <ion-list>
+      Tomorrow's appointment
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card color="light">
+  <ion-card-content>
+    <ion-list>
+      A day after tomorrow appointment
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<ion-card color="light">
+  <ion-card-content>
+    <ion-list>
+      A day after tomorrow appointment
+    </ion-list>
+  </ion-card-content>
+</ion-card>
 </ion-content>
