@@ -16,12 +16,21 @@ import { HomePage } from "../home/home";
 })
 export class LoginPage {
 
+  // model: any = {
+  //   username: '',
+  //   password:''
+  // }
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   firstModal(){
     this.navCtrl.setRoot(HomePage);
   }
+
+  // loginForm(){
+  //   console.log(this.model.username);
+  // }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
